@@ -1,7 +1,7 @@
   <!-- Header -->
   <header class="masthead bg-primary text-white text-center">
     <div class="container">
-      <img class="img-fluid mb-5 d-block mx-auto" src="<?php echo base_url();?>public/template_user/img/profile.png" alt="">
+      <img class="img-fluid mb-5 d-block mx-auto" src="<?php echo base_url();?>public/template_user/img/coruja_grande.png" alt="">
       <h1 class="text-uppercase mb-0">Mestre Coruja</h1>
       <hr class="star-light">
       <h2 class="font-weight-light mb-0">Facilitando a vida do educador infantil</h2>
@@ -85,7 +85,7 @@
       <hr class="star-light mb-5">
       <div class="row">
         <div class="col-lg-4 ml-auto">
-          <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+          <p class="lead">Mestre Coruja surgiu para ajudar o educador infantil na elaboração das atividades didáticas.Afinal, o tempo é precioso e sabemos o quão demorado é desenvolver uma atividade.</p>
         </div>
         <div class="col-lg-4 mr-auto">
           <p class="lead">Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>

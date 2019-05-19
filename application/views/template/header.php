@@ -31,7 +31,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="<?php echo base_url();?>#page-top">Logo</a>
+      <a class="navbar-brand js-scroll-trigger" href="<?php echo base_url();?>#page-top"><img src="<?php echo base_url()?>public/template_user/img/coruja_pequena.png" ></a>
       <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -48,7 +48,7 @@
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="<?php echo base_url();?>#contact">Contato</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#"><i class="fas fa-user-alt" ></i>&nbsp;Entrar</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="<?php echo base_url();?>restrict"><i class="fas fa-user-alt" ></i>&nbsp;Entrar</a>
           </li>
         </ul>
       </div>
