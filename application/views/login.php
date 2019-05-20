@@ -41,7 +41,7 @@
                     <a class="small" href="forgot-password.html">Esqueceu a senha?</a>
                   </div>
                   <div class="text-center">
-                    <a class="small" href="register.html">Crie uma conta!</a>
+                    <a class="small" href="home#about">Crie uma conta!</a>
                   </div>
                 </div>
               </div>

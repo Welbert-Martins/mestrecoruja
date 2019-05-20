@@ -92,7 +92,7 @@
         </div>
       </div>
       <div class="text-center mt-4">
-        <a class="btn btn-xl btn-outline-light" href="#">
+        <a class="btn btn-xl btn-outline-light" data-toggle="modal" data-target="#ModalCadastro">
           <i class="fas fa-download mr-2"></i>
           Cadastre-se agora!
         </a>
