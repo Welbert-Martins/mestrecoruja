@@ -30,7 +30,7 @@
                         <label class="custom-control-label" for="customCheck">Armazenar neste computador</label>
                       </div>
                     </div>
-                    <a href="index.html" class="btn btn-primary btn-user btn-block">
+                    <a href="page_user" class="btn btn-primary btn-user btn-block">
                       Entrar
                     </a>
                     <hr>

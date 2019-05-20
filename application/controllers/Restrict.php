@@ -9,6 +9,11 @@ class Restrict extends CI_Controller {
 		
 	}
 
+
+	public function page_user(){
+		$this->template->show("restrict.php");
+	}
+
 }
 
 /* End of file controllername.php */

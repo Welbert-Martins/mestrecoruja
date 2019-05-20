@@ -251,6 +251,10 @@
                           <label class="custom-control-label" for="debito">Cartão de débito</label>
                         </div>
                         <div class="custom-control custom-radio">
+                          <input id="moeda" name="paymentMethod" type="radio" class="custom-control-input" required>
+                          <label class="custom-control-label" for="debito">Moeda do Site</label>
+                        </div>
+                        <div class="custom-control custom-radio">
                           <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
                           <label class="custom-control-label" for="paypal">PagSeguro</label>
                         </div>
