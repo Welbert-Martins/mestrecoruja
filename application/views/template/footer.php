@@ -3,12 +3,10 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4 mb-5 mb-lg-0">
-          <h4 class="text-uppercase mb-4">Location</h4>
-          <p class="lead mb-0">2215 John Daniel Drive
-            <br>Clark, MO 65243</p>
+          
         </div>
         <div class="col-md-4 mb-5 mb-lg-0">
-          <h4 class="text-uppercase mb-4">Around the Web</h4>
+          <h4 class="text-uppercase mb-4">Siga-nos nas redes sociais</h4>
           <ul class="list-inline mb-0">
             <li class="list-inline-item">
               <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
@@ -38,9 +36,7 @@
           </ul>
         </div>
         <div class="col-md-4">
-          <h4 class="text-uppercase mb-4">About Freelancer</h4>
-          <p class="lead mb-0">Freelance is a free to use, open source Bootstrap theme created by
-            <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+         
         </div>
       </div>
     </div>
@@ -48,7 +44,7 @@
 
   <div class="copyright py-4 text-center text-white">
     <div class="container">
-      <small>Copyright &copy; Your Website 2019</small>
+      <small>Copyright &copy; PI 3A 2019</small>
     </div>
   </div>
 

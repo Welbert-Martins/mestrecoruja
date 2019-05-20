@@ -88,7 +88,7 @@
           <p class="lead">Mestre Coruja surgiu para ajudar o educador infantil na elaboração das atividades didáticas.Afinal, o tempo é precioso e sabemos o quão demorado é desenvolver uma atividade.</p>
         </div>
         <div class="col-lg-4 mr-auto">
-          <p class="lead">Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+          <p class="lead">Por isso temos muitas atividades disponíneis para serem baixadas por nossos assinantes e o nosso diferencial,fazemos a sua atividade sob encomenda,é só se inscrever e pedir.</p>
         </div>
       </div>
       <div class="text-center mt-4">

@@ -10,6 +10,11 @@
 
   <title>Mestre Coruja</title>
 
+  
+
+  <link rel="shortcut icon" href="<?php echo base_url()?>public/template_user/img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="<?php echo base_url()?>public/template_user/img/favicon.ico" type="image/x-icon">
+
   <!-- Bootstrap core CSS -->
   <link href="<?php echo base_url();?>public/template_user/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
