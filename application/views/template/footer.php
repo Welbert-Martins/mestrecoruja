@@ -205,19 +205,19 @@
 
                   <div class="form-group col-md-12">
                     <label for="inputAddress">Nome</label>
-                    <input type="text" class="form-control" id="txtnome" placeholder="Digite seu nome">
+                    <input type="text" class="form-control" id="txtnome" placeholder="Digite seu nome"  required="required" data-validation-required-message="Nome obrigatório.">
                   </div>
                   <div class="form-group col-md-12">
                     <label for="inputEmail4">Email</label>
-                    <input type="email" class="form-control" id="txtEmail" placeholder="Email">
+                    <input type="email" class="form-control" id="txtEmail" placeholder="Email"  required="required" data-validation-required-message="E-mail obrigatório.">
                   </div>
                   <div class="form-group col-md-6">
                     <label for="inputPassword4">Senha</label>
-                    <input type="password" class="form-control" id="txtsenha" placeholder="Senha">
+                    <input type="password" class="form-control" id="txtsenha" placeholder="Senha" required="required" data-validation-required-message="Senha obrigatório.">
                   </div>
                   <div class="form-group col-md-6">
                     <label for="inputPassword4">Repita a Senha</label>
-                    <input type="password" class="form-control" id="txtrepeteSenha" placeholder="Repetir Senha">
+                    <input type="password" class="form-control" id="txtrepeteSenha" placeholder="Repetir Senha"required="required" data-validation-required-message="Confirmação de senha obrigatório.">
                   </div>
                 </div>
                
@@ -225,7 +225,56 @@
                 <div class="form-row">
                   <div class="form-group col-md-6">
                     <label for="txtCpf">CPF</label>
-                    <input type="text" class="form-control" id="txtCpf">
+                    <input type="text" class="form-control" id="txtCpf" required="required" data-validation-required-message="CPF obrigatório." 
+                    <?php 
+                     function validaCPF($cpf = null) {
+
+  // Verifica se um número foi informado
+  if(empty($cpf)) {
+    return false;
+  }
+
+  // Elimina possivel mascara
+  $cpf = preg_replace("/[^0-9]/", "", $cpf);
+  $cpf = str_pad($cpf, 11, '0', STR_PAD_LEFT);
+  
+  // Verifica se o numero de digitos informados é igual a 11 
+  if (strlen($cpf) != 11) {
+    return false;
+  }
+  // Verifica se nenhuma das sequências invalidas abaixo 
+  // foi digitada. Caso afirmativo, retorna falso
+  else if ($cpf == '00000000000' || 
+    $cpf == '11111111111' || 
+    $cpf == '22222222222' || 
+    $cpf == '33333333333' || 
+    $cpf == '44444444444' || 
+    $cpf == '55555555555' || 
+    $cpf == '66666666666' || 
+    $cpf == '77777777777' || 
+    $cpf == '88888888888' || 
+    $cpf == '99999999999') {
+    return false;
+   // Calcula os digitos verificadores para verificar se o
+   // CPF é válido
+   } else {   
+    
+    for ($t = 9; $t < 11; $t++) {
+      
+      for ($d = 0, $c = 0; $c < $t; $c++) {
+        $d += $cpf{$c} * (($t + 1) - $c);
+      }
+      $d = ((10 * $d) % 11) % 10;
+      if ($cpf{$c} != $d) {
+        return false;
+      }
+    }
+
+    return true;
+  }
+}
+                    ?> >
+
                   </div>
                   <div class="form-group col-md-6">
                     <label for="selectPlano">Plano</label>

@@ -109,32 +109,32 @@
         <div class="col-lg-8 mx-auto">
           <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
           <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-          <form name="sentMessage" id="contactForm" novalidate="novalidate">
+         <form name="sentMessage" id="contactForm" novalidate="novalidate">
             <div class="control-group">
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
                 <label>Nome</label>
-                <input class="form-control" id="name" type="text" placeholder="Nome" required="required" data-validation-required-message="Please enter your name.">
+                <input class="form-control" id="name" type="text" placeholder="Nome" required="required" data-validation-required-message="O campo nome é obrigatório.">
                 <p class="help-block text-danger"></p>
               </div>
             </div>
             <div class="control-group">
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
                 <label>Email </label>
-                <input class="form-control" id="email" type="email" placeholder="Email " required="required" data-validation-required-message="Please enter your email address.">
+                <input class="form-control" id="email" type="email" placeholder="Email " required="required" data-validation-required-message="O campo e-mail é obrigatório.">
                 <p class="help-block text-danger"></p>
               </div>
             </div>
             <div class="control-group">
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
                 <label>Telefone</label>
-                <input class="form-control" id="phone" type="tel" placeholder="Telefone" required="required" data-validation-required-message="Please enter your phone number.">
+                <input class="form-control" id="phone" type="tel" placeholder="Telefone" required="required" data-validation-required-message="O Número de Telefone é obrigatório.">
                 <p class="help-block text-danger"></p>
               </div>
             </div>
             <div class="control-group">
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
                 <label>Mensagem</label>
-                <textarea class="form-control" id="message" rows="5" placeholder="Mensagem" required="required" data-validation-required-message="Please enter a message."></textarea>
+                <textarea class="form-control" id="message" rows="5" placeholder="Mensagem" required="required" data-validation-required-message="É obrigatório o preenchimento de uma mensagem."></textarea>
                 <p class="help-block text-danger"></p>
               </div>
             </div>
