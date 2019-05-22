@@ -21,6 +21,7 @@
                 <i class="fas fa-search-plus fa-3x"></i>
               </div>
             </div>
+            
             <img class="img-fluid" src="<?php echo base_url();?>public/template_user/img/portfolio/cabin.png" alt="">
           </a>
         </div>
