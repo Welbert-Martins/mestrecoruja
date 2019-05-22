@@ -1,2 +1,3 @@
 Teste
 segundo teste
+terceiro teste
