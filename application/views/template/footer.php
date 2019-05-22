@@ -202,21 +202,21 @@
       <div class="modal-body">
         <form>
                 <div class="form-row">
-
+                  <small><font color = "c3c0c0" size="2">  Os campos com asterisco são obrigatórios</font></small>
                   <div class="form-group col-md-12">
-                    <label for="inputAddress">Nome</label>
+                    <label for="inputAddress">Nome*</label>
                     <input type="text" class="form-control" id="txtnome" placeholder="Digite seu nome"  required="required" data-validation-required-message="Nome obrigatório.">
                   </div>
                   <div class="form-group col-md-12">
-                    <label for="inputEmail4">Email</label>
+                    <label for="inputEmail4">Email*</label>
                     <input type="email" class="form-control" id="txtEmail" placeholder="Email"  required="required" data-validation-required-message="E-mail obrigatório.">
                   </div>
                   <div class="form-group col-md-6">
-                    <label for="inputPassword4">Senha</label>
+                    <label for="inputPassword4">Senha*</label>
                     <input type="password" class="form-control" id="txtsenha" placeholder="Senha" required="required" data-validation-required-message="Senha obrigatório.">
                   </div>
                   <div class="form-group col-md-6">
-                    <label for="inputPassword4">Repita a Senha</label>
+                    <label for="inputPassword4">Repita a Senha*</label>
                     <input type="password" class="form-control" id="txtrepeteSenha" placeholder="Repetir Senha"required="required" data-validation-required-message="Confirmação de senha obrigatório.">
                   </div>
                 </div>
@@ -224,7 +224,7 @@
                 
                 <div class="form-row">
                   <div class="form-group col-md-6">
-                    <label for="txtCpf">CPF</label>
+                    <label for="txtCpf">CPF*</label>
                     <input type="text" class="form-control" id="txtCpf" required="required" data-validation-required-message="CPF obrigatório." 
                     <?php 
                      function validaCPF($cpf = null) {
