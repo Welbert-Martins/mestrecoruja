@@ -12,17 +12,19 @@
             <!-- Nested Row within Card Body -->
             <div class="row">
               <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
+
               <div class="col-lg-6">
                 <div class="p-5">
                   <div class="text-center">
                     <h1 class="h4 text-gray-900 mb-4">Entrar</h1>
                   </div>
-                  <form class="user">
+                  <form class="user" method="post" action="<?=base_url()?>restrict/ajax_login">
                     <div class="form-group">
-                      <input type="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Digite seu email ...">
+                      <input type="email" name="txtEmailLogin" class="form-control form-control-user" id="txtEmailLogin" aria-describedby="emailHelp" placeholder="Digite seu email ...">
                     </div>
+                    <span class="help-block btn-block text-center" id="erroSpan"  ></span>
                     <div class="form-group">
-                      <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Senha">
+                      <input type="password" name="txtSenhaLogin" class="form-control form-control-user" id="txtSenhaLogin" placeholder="Senha">
                     </div>
                     <div class="form-group">
                       <div class="custom-control custom-checkbox small">
@@ -30,20 +32,29 @@
                         <label class="custom-control-label" for="customCheck">Armazenar neste computador</label>
                       </div>
                     </div>
-                    <a href="page_user" class="btn btn-primary btn-user btn-block">
+                    
+                      <div>
+                    <button type="submit" id="btnLogin" class="btn btn-primary btn-user btn-block">
                       Entrar
-                    </a>
-                    <hr>
+                    </button>
+                    </div><br>
+                    <span class="help-block btn-block text-center" id="erroSpan"  ></span>
+                    
+                    
+                   
                     
                   </form>
                   <hr>
+
                   <div class="text-center">
                     <a class="small" href="forgot-password.html">Esqueceu a senha?</a>
                   </div>
                   <div class="text-center">
                     <a class="small" href="home#about">Crie uma conta!</a>
                   </div>
+
                 </div>
+                 
               </div>
             </div>
           </div>

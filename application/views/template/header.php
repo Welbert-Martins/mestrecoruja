@@ -28,7 +28,16 @@
 
   <!-- Custom styles for this template -->
   <link href="<?php echo base_url();?>public/template_user/css/freelancer.min.css" rel="stylesheet">
+  <?php 
+      if (isset($estilo)) {
+        foreach ($estilo as $estilo_nome) {
+          $href = base_url() . "public/template_user/css/" .$estilo_nome; ?>
+          <link href="<?=$href?>" rel="stylesheet" type="text/css">
+       <?php 
+         }
+      }
 
+   ?>
 </head>
 
 <body id="page-top">

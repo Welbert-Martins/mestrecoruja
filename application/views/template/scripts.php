@@ -13,6 +13,17 @@
   <!-- Custom scripts for this template -->
   <script src="<?php echo base_url();?>public/template_user/js/freelancer.min.js"></script>
 
+   <?php 
+      if (isset($scripts)) {
+        foreach ($scripts as $script_nome) {
+          $src = base_url() . "public/template_user/js/" .$script_nome; ?>
+          <script src="<?= $src?>"></script>
+       <?php 
+         }
+      }
+
+   ?>
+
 </body>
 
 </html>

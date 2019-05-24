@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 4.7.4
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: 23-Maio-2019 às 03:30
--- Versão do servidor: 10.1.36-MariaDB
--- versão do PHP: 7.2.10
+-- Host: 127.0.0.1:3306
+-- Generation Time: 24-Maio-2019 às 19:46
+-- Versão do servidor: 5.7.19
+-- PHP Version: 5.6.31
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -21,6 +21,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `mestrecoruja`
 --
+CREATE DATABASE IF NOT EXISTS `mestrecoruja` DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+USE `mestrecoruja`;
 
 -- --------------------------------------------------------
 
@@ -28,15 +30,17 @@ SET time_zone = "+00:00";
 -- Estrutura da tabela `atividade`
 --
 
-CREATE TABLE `atividade` (
-  `ID` int(11) NOT NULL,
+DROP TABLE IF EXISTS `atividade`;
+CREATE TABLE IF NOT EXISTS `atividade` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(255) NOT NULL,
   `descricao` varchar(400) NOT NULL,
   `index_img` int(11) NOT NULL,
   `preco` int(11) NOT NULL,
   `autor` varchar(255) NOT NULL,
   `tipo` varchar(150) NOT NULL,
-  `tema` varchar(150) NOT NULL
+  `tema` varchar(150) NOT NULL,
+  PRIMARY KEY (`ID`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -45,14 +49,17 @@ CREATE TABLE `atividade` (
 -- Estrutura da tabela `solicitacao`
 --
 
-CREATE TABLE `solicitacao` (
-  `ID` int(11) NOT NULL,
+DROP TABLE IF EXISTS `solicitacao`;
+CREATE TABLE IF NOT EXISTS `solicitacao` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
   `tipo` varchar(150) NOT NULL,
   `usuario` int(11) NOT NULL,
   `tema` varchar(150) NOT NULL,
   `descricao` varchar(400) NOT NULL,
-  `status` varchar(20) NOT NULL,
-  `index_img` int(11) NOT NULL
+  `status` tinyint(1) NOT NULL,
+  `index_img` int(11) NOT NULL,
+  PRIMARY KEY (`ID`),
+  KEY `usuario_fk` (`usuario`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -61,63 +68,27 @@ CREATE TABLE `solicitacao` (
 -- Estrutura da tabela `usuario`
 --
 
-CREATE TABLE `usuario` (
-  `ID` int(11) NOT NULL,
+DROP TABLE IF EXISTS `usuario`;
+CREATE TABLE IF NOT EXISTS `usuario` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `senha` varchar(255) NOT NULL,
-  `cpf` int(11) NOT NULL,
+  `cpf` varchar(11) NOT NULL,
   `qtd_moedas` int(11) NOT NULL,
   `forma_pagamento` varchar(150) NOT NULL,
-  `ativo` int(11) NOT NULL,
+  `ativo` tinyint(1) NOT NULL,
   `nivel` int(11) NOT NULL,
-  `venc_cadastro` date NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+  `venc_cadastro` date NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 --
--- Indexes for dumped tables
+-- Extraindo dados da tabela `usuario`
 --
 
---
--- Indexes for table `atividade`
---
-ALTER TABLE `atividade`
-  ADD PRIMARY KEY (`ID`);
-
---
--- Indexes for table `solicitacao`
---
-ALTER TABLE `solicitacao`
-  ADD PRIMARY KEY (`ID`),
-  ADD KEY `usuario_fk` (`usuario`);
-
---
--- Indexes for table `usuario`
---
-ALTER TABLE `usuario`
-  ADD PRIMARY KEY (`ID`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `atividade`
---
-ALTER TABLE `atividade`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `solicitacao`
---
-ALTER TABLE `solicitacao`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `usuario`
---
-ALTER TABLE `usuario`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+INSERT INTO `usuario` (`ID`, `nome`, `email`, `senha`, `cpf`, `qtd_moedas`, `forma_pagamento`, `ativo`, `nivel`, `venc_cadastro`) VALUES
+(1, 'Welbert Martins', 'welbert3388@gmail.com', '$2y$10$jlKGbvjrUhTp3jw.y7zcc.5C/2TfmA.1JVHxteBFfcynQHp1GavUK', '08149978640', 200, '1', 1, 1, '2019-12-25');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
