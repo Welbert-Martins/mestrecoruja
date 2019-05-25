@@ -18,11 +18,11 @@
                   <div class="text-center">
                     <h1 class="h4 text-gray-900 mb-4">Entrar</h1>
                   </div>
-                  <form class="user" method="post" action="<?=base_url()?>restrict/ajax_login">
+                  <form class="user" id="login_form" method="post">
                     <div class="form-group">
                       <input type="email" name="txtEmailLogin" class="form-control form-control-user" id="txtEmailLogin" aria-describedby="emailHelp" placeholder="Digite seu email ...">
                     </div>
-                    <span class="help-block btn-block text-center" id="erroSpan"  ></span>
+                    
                     <div class="form-group">
                       <input type="password" name="txtSenhaLogin" class="form-control form-control-user" id="txtSenhaLogin" placeholder="Senha">
                     </div>

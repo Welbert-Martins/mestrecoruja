@@ -1,4 +1,4 @@
-const BASE_URL = "localhost/mestrecoruja/";
+const BASE_URL = "http://localhost/mestrecoruja/";
 
 function limparErros () {
 	$("#erroSpan").removeClass('alert alert-danger');

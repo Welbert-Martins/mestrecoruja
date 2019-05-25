@@ -31,7 +31,7 @@ class Restrict extends CI_Controller {
 
 
 		if (empty($email)) {
-			$json["status"]=1;
+			$json["status"]=0;
 			$json["lista_erro"]["#txtEmailLogin"]= "usuário não pode ser vazio!";
 
 		}else{
