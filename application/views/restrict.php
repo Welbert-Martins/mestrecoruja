@@ -1,15 +1,18 @@
 <section style="min-height: calc(100vh - 130px);margin-top: 50px;" id="login" class="">
 <div class="container">
 	<div class="row">
-		<div class="offset-6"></div>
+		
 		<div class="col-md-6">
-			<h3 class="text-right">Usuário, você possui 100 <i class="fas fa-money-bill-alt"></i> !</h3>
-			<br>
-			<br>
+			<h3 class="text-left">Usuário, você possui 100 <i class="fas fa-money-bill-alt"></i> !</h3>
 		</div>
+
+    <div class="col-md-6">
+      <a href="restrict/logoff" class="btn-link float-right text-dark" title="Sair"><i class="fas fa-door-open "></i>Sair</a>
+    </div>
 		
 		
 	</div>
+  <br><br>
 
 	<div class="row">
 		<div class="col-md-6">
@@ -35,7 +38,7 @@
     </form>
 
     <br><br>
-   <table class="table table-bordered table-inverse table-hover">
+   <table id="dt_ativ_user" class="table table-bordered table-inverse table-hover">
    	<thead class="table-active">
    		<tr >
    			<th>Imagem</th>
