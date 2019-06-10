@@ -80,11 +80,19 @@ class Restrict extends CI_Controller {
 
 
 	public function page_user(){
-		$this->template->show("restrict.php");
+		$data = array("scripts" =>array(
+			"logado.js"
+		)
+	);
+		$this->template->show("restrict.php",$data);
 	}
 
 	public function page_admin(){
-		$this->template->show("admin.php");
+		$data = array("scripts" =>array(
+			"logado.js"
+		)
+	);
+		$this->template->show("admin.php",$data);
 	}
 
 }

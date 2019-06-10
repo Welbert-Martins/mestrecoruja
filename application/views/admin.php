@@ -367,3 +367,6 @@
 
 
   </section>
+<script>
+  $("#entrar").hide();
+</script>

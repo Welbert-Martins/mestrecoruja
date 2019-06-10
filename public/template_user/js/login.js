@@ -17,6 +17,7 @@ $(function () {
 				}else if (json["status"]==2) {
 					limparErros();
 					$("#btnLogin").parent().siblings('.help-block').html(carregaImagem("Logando..."));
+					
 					window.location = BASE_URL + "page_admin";
 				}else{
 					mostrarErros(json["lista_erro"]);
