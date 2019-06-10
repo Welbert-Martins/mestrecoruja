@@ -6,6 +6,10 @@ class Home extends CI_Controller {
 
 	public function index()
 	{
-		$this->template->show('home');
+		$data = array("scripts" =>array(
+			"util.js"
+		)
+	);
+		$this->template->show('home',$data);
 	}
 }

@@ -10,7 +10,8 @@ class Users_model extends CI_Model {
 		parent::__construct();
 		$this->load->database();
 		}
-
+			/*seleciona e retorna usuario no banco de dados quando o email(string) passado por parametro
+			for igual ao encontrado no banco de dados.Essa função  é utilizada no login*/
 		    public function buscarUsuario($usuario_email){
 			$this->db 
 			->select("ID,nome,email,senha,cpf,qtd_moedas,forma_pagamento,ativo,nivel,venc_cadastro")
@@ -26,6 +27,13 @@ class Users_model extends CI_Model {
 				return NULL;
 			}
 		}
+
+		public function inserirUsuario($data){
+			$this->db->insert('usuario', $data);
+			
+		}
+
+
 	
 
 }
