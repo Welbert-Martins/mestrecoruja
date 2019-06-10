@@ -97,7 +97,7 @@ CREATE TABLE `usuario` (
   `nivel` int(11) NOT NULL,
   `venc_cadastro` date NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -106,7 +106,7 @@ CREATE TABLE `usuario` (
 
 LOCK TABLES `usuario` WRITE;
 /*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-INSERT INTO `usuario` VALUES (1,'Welbert Martins','welbert3388@gmail.com','$2y$10$jlKGbvjrUhTp3jw.y7zcc.5C/2TfmA.1JVHxteBFfcynQHp1GavUK','08149978640',200,'1',1,1,'2019-12-25'),(2,'Joao da Silva','joaodasilva@gmail.com','$2y$10$lxZWo3u1LM.s3XnmyMTS2u8Mxs67GazgTHfcEnSSJ/4pZuzoxaet2','11111111111',0,'2',0,0,'2019-12-31');
+INSERT INTO `usuario` VALUES (1,'Welbert Martins','welbert3388@gmail.com','$2y$10$jlKGbvjrUhTp3jw.y7zcc.5C/2TfmA.1JVHxteBFfcynQHp1GavUK','08149978640',200,'1',1,1,'2019-12-25'),(2,'Joao da Silva','joaodasilva@gmail.com','$2y$10$lxZWo3u1LM.s3XnmyMTS2u8Mxs67GazgTHfcEnSSJ/4pZuzoxaet2','11111111111',0,'2',0,0,'2019-12-31'),(3,'Hebert Prata','hebert-prata@hotmail.com','$2y$10$OBmTZH7rd4IFPepsdNxiTOhu9YmV48rlP4teVkn40EmM.dRmmR4Ii','11111111111',0,'Unitário',1,1,'2019-12-10'),(4,'Jefferson Campos','jefferson@gmail.com','$2y$10$j82K//IhX7vh.6ncg6ccnOdJOzrQJ285LXbx5ZsIklQa1SmpP1ubC','22222222222',0,'Mensal',0,0,'2019-12-10'),(5,'Arthur','arthur@gmail.com','$2y$10$0ez8m5JMV19gKigW6udf0OKRREnWSpo3Sm096i5nPSEW0nZ6B22GC','11111111111',0,'Unitário',0,0,'2019-12-10'),(6,'Luiz Henrique','luiz@gmail.com','$2y$10$quCPf3Q2cl2FtyNkJfjvDewwzef5Nw9qNCTqqMLWoBMVOVFBw5Gey','11111111111',0,'Mensal',0,0,'2019-12-10');
 /*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -127,4 +127,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-06-03 17:00:55
+-- Dump completed on 2019-06-10 16:44:57
