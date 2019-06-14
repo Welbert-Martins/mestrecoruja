@@ -9,27 +9,27 @@
           <h4 class="text-uppercase mb-4">Siga-nos nas redes sociais</h4>
           <ul class="list-inline mb-0">
             <li class="list-inline-item">
-              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.facebook.com/">
                 <i class="fab fa-fw fa-facebook-f"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://aboutme.google.com/">
                 <i class="fab fa-fw fa-google-plus-g"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://twitter.com/">
                 <i class="fab fa-fw fa-twitter"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.linkedin.com/">
                 <i class="fab fa-fw fa-linkedin-in"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://dribbble.com/">
                 <i class="fab fa-fw fa-dribbble"></i>
               </a>
             </li>
