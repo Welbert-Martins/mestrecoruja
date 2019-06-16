@@ -22,7 +22,7 @@
               </div>
             </div>
             
-            <img class="img-fluid" src="<?php echo base_url();?>public/template_user/img/portfolio/cabin.png" alt="">
+            <img class="img-fluid" src="<?php echo base_url();?>public/template_user/img/portfolio/Capturar.png" alt="">
           </a>
         </div>
         <div class="col-md-6 col-lg-4">
@@ -32,7 +32,7 @@
                 <i class="fas fa-search-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="<?php echo base_url();?>public/template_user/img/portfolio/cake.png" alt="">
+            <img class="img-fluid" src="<?php echo base_url();?>public/template_user/img/portfolio/Capturar2.png" alt="">
           </a>
         </div>
         <div class="col-md-6 col-lg-4">
@@ -42,7 +42,7 @@
                 <i class="fas fa-search-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="<?php echo base_url();?>public/template_user/img/portfolio/circus.png" alt="">
+            <img class="img-fluid" src="<?php echo base_url();?>public/template_user/img/portfolio/Capturar3.png" alt="">
           </a>
         </div>
         <div class="col-md-6 col-lg-4">
@@ -52,7 +52,7 @@
                 <i class="fas fa-search-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="<?php echo base_url();?>public/template_user/img/portfolio/game.png" alt="">
+            <img class="img-fluid" src="<?php echo base_url();?>public/template_user/img/portfolio/Capturar4.png" alt="">
           </a>
         </div>
         <div class="col-md-6 col-lg-4">
@@ -62,7 +62,7 @@
                 <i class="fas fa-search-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="<?php echo base_url();?>public/template_user/img/portfolio/safe.png" alt="">
+            <img class="img-fluid" src="<?php echo base_url();?>public/template_user/img/portfolio/Capturar5.png" alt="">
           </a>
         </div>
         <div class="col-md-6 col-lg-4">
@@ -72,7 +72,7 @@
                 <i class="fas fa-search-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="<?php echo base_url();?>public/template_user/img/portfolio/submarine.png" alt="">
+            <img class="img-fluid" src="<?php echo base_url();?>public/template_user/img/portfolio/Capturar6.png" alt="">
           </a>
         </div>
       </div>

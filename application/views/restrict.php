@@ -49,29 +49,47 @@
    	</thead>
    	<tbody>
    		<tr>
-   			<td><img src="<?php echo base_url();?>public/template_user/img/atividade.png" alt=""></td>
-   			<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+   			<td><img src="<?php echo base_url();?>public/template_user/img/Capturar13.png" alt=""></td>
+   			<td>Atividade para ligar o desenho dos animais até o seu nome
 			</br><a href="#">baixar <i class="fas fa-file-download"></i> </a> 
    			</td>
    			<td>25 </td>
    		</tr>
    		<tr>
-   			<td><img src="<?php echo base_url();?>public/template_user/img/atividade.png" alt=""></td>
-   			<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+   			<td><img src="<?php echo base_url();?>public/template_user/img/Capturar14.png" alt=""></td>
+   			<td>Colora o macaco com as cores de sua preferência
 			</br><a href="#">baixar <i class="fas fa-file-download"></i> </a> 
    			</td>
    			<td>25 </td>
-   		</tr>	
+   		</tr>
+      <tr>
+        <td><img src="<?php echo base_url();?>public/template_user/img/Capturar15.png" alt=""></td>
+        <td>Ajude o papai noel a chegar no seu trenó
+      </br><a href="#">baixar <i class="fas fa-file-download"></i> </a> 
+        </td>
+        <td>25 </td>
+      </tr>
+      <tr>
+        <td><img src="<?php echo base_url();?>public/template_user/img/Capturar16.png" alt=""></td>
+        <td>Escreva o nome dos objetos
+      </br><a href="#">baixar <i class="fas fa-file-download"></i> </a> 
+        </td>
+        <td>25 </td>
+      </tr>
+      <tr>
+        <td><img src="<?php echo base_url();?>public/template_user/img/Capturar17.png" alt=""></td>
+        <td>Formem duplas e joguem jogo da velha com seu amigo
+      </br><a href="#">baixar <i class="fas fa-file-download"></i> </a> 
+        </td>
+        <td>25 </td>
+      </tr>
+      <tr>
+        <td><img src="<?php echo base_url();?>public/template_user/img/Capturar18.png" alt=""></td>
+        <td>Colora a letra "A" das palavras.
+      </br><a href="#">baixar <i class="fas fa-file-download"></i> </a> 
+        </td>
+        <td>25 </td>
+      </tr>
    	</tbody>
    </table>
     
