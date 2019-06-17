@@ -40,6 +40,9 @@ class User extends CI_Controller {
         $this->template->show('home',$data);
         echo json_encode($json);
     }
+
+
+    
     
     public function index()
     {

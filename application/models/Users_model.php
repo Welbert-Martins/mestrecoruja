@@ -34,6 +34,11 @@ class Users_model extends CI_Model {
 		}
 
 
+		public function carregarUsuarios(){
+            return $this->db->get("usuario")->result_array();
+        }
+
+
 	
 
 }

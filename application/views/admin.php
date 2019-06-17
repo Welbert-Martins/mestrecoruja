@@ -46,13 +46,14 @@
               </thead>
 
               <tbody>
+                <?php foreach($atividades as $atividade): ?>
                 <tr>
-                  <td>1</td>
-                  <td>Welbert Martins</td>
-                  <td>welbert3388@gmail.com</td>
-                  <td>03/06/2019</td>
-                  <td>Preciso de uma atividade de caça-palavras baseada em lendas do Brasil</td>
-                  <td>Aguardando</td>
+                  <td><?=$atividade['ID']?></td>
+                  <td><?=$atividade['usuario']?></td>
+                  <td><?=$atividade['email']?></td>
+                  <td><?= date("d/m/Y",strtotime($atividade['dt_recebe']) )?></td>
+                  <td><?=$atividade['descricao']?></td>
+                  <td><?=$atividade['status']?></td>
                   <td>
                     <a  class="btn-link text-dark" title="Alterar Status" data-toggle="modal" data-target="#ModalSolicitacoes"><i class="fas fa-edit"></i>&nbsp&nbsp</a>
                     <a href="" class="btn-link text-dark" title="excluir"><i class="fas fa-trash-alt"></i></a>
@@ -60,6 +61,7 @@
                   </td>
 
                 </tr>
+                <?php endforeach ?>
               </tbody>
             </table>
           </div>
@@ -126,13 +128,15 @@
               </thead>
 
               <tbody>
+              <?php foreach($usuarios as $usuario): ?>
                 <tr>
-                  <td>1</td>
-                  <td>Welbert Martins</td>
-                  <td>welbert3388@gmail.com</td>
-                  <td>200</td>
-                  <td>Ativo</td>
-                  <td>Administrador</td>
+                  <td><?=$usuario['ID']?></td>
+                  <td><?=$usuario['nome']?></td>
+                  <td><?=$usuario['email']?></td>
+                  <td><?=$usuario['qtd_moedas']?></td>
+                  <td><?=$usuario['ativo']==0?"Inativo":"Ativo"?></td>
+                  <td><?=$usuario['nivel']==0?"Usuario":"Administrador"?></td>
+                  
                   <td>
                     <a  class="btn-link text-dark" title="Editar Usuário" data-toggle="modal" data-target="#ModalEditUsuario"><i class="fas fa-edit"></i>&nbsp&nbsp</a>
                     <a href="" class="btn-link text-dark" title="excluir"><i class="fas fa-trash-alt"></i></a>
@@ -140,6 +144,7 @@
                   </td>
 
                 </tr>
+                <?php endforeach ?>
               </tbody>
             </table>
           </div>

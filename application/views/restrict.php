@@ -1,9 +1,10 @@
+
 <section style="min-height: calc(100vh - 130px);margin-top: 50px;" id="login" class="">
 <div class="container">
 	<div class="row">
 		
 		<div class="col-md-6">
-			<h3 class="text-left">Usuário, você possui 100 <i class="fas fa-money-bill-alt"></i> !</h3>
+			<h3 class="text-left"> <?= $nome?>, você possui <?= $moedas?> <i class="fas fa-money-bill-alt"></i> !</h3>
 		</div>
 
     <div class="col-md-6">
@@ -96,7 +97,7 @@
 
   </div>
 
-   <!--Cadastro Modal -->
+   <!--Cadastro Atividade Modal -->
 <div class="modal fade" id="ModalAtividade" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
@@ -107,16 +108,17 @@
         </button>
       </div>
       <div class="modal-body">
-        <form>
+        <form action="<?= base_url()?>atividade/salvar_solicitacao" method="post">
                 <div class="form-row">
-
+                  <input type="text" id="nomeSolicitante" name="nomeSolicitante" value="<?= $nome ?>" hidden>
+                  <input type="text" id="emailSolicitante" name="emailSolicitante" value="<?= $email ?>" hidden>
                   <div class="form-group col-md-12">
                     <label for="inputAddress">Atividade</label>
-                    <input type="text" class="form-control" id="txtnome" placeholder="Digite o nome da atividade">
+                    <input type="text" class="form-control" id="txtnome" name="txtnome" placeholder="Digite o nome da atividade">
                   </div>
                   <div class="form-group col-md-12">
                     <label for="txtDescricao">Descrição</label>
-                    <textarea rows="5" class="form-control" id="txtDescricao" placeholder="Escreva uma  breve descrição com a proposta e o tema."></textarea>  
+                    <textarea rows="5" class="form-control" id="txtDescricao" name="txtDescricao" placeholder="Escreva uma  breve descrição com a proposta e o tema."></textarea>  
                   </div>
                   
                 </div>
@@ -126,12 +128,13 @@
 
                 
                
-       </form>
+       
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-        <button type="button" class="btn btn-primary">Enviar</button>
+        <button type="submit" id="btnSolicitacao" class="btn btn-primary">Enviar</button>
       </div>
+      </form>
     </div>
   </div>
 </div>

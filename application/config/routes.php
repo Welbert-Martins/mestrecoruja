@@ -54,3 +54,4 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['page_user'] = 'restrict/page_user';
 $route['page_admin'] = 'restrict/page_admin';
+
