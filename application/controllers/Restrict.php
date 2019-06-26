@@ -90,7 +90,7 @@ class Restrict extends CI_Controller {
 
 	public function page_user(){
 		$data = array("scripts" =>array(
-			"logado.js"
+			"logado.js","util2.js","solicitacao.js"
 		),"nome"=>$this->session->userdata('nome_usuario'),
 		"moedas"=>$this->session->userdata('moedas_usuario'),
 		"email"=>$this->session->userdata('email_usuario'),

@@ -2,7 +2,8 @@ const BASE_URL = "http://localhost/mestrecoruja/";
 
 function limparErros () {
 	$("#erroSpan").removeClass('alert alert-danger');
-	$(".help-block").html("");
+    $(".help-block").html("");
+    
 
 
 }
@@ -25,6 +26,11 @@ function mostrarSucesso (lista_erro) {
 	$.each(lista_erro,function(id, mensagem) {
 		
 		$(id).parent().siblings('.help-block').html(mensagem);
-		$("#erroSpan").addClass('alert alert-success');
+        $("#erroSpan").addClass('alert alert-success');
+        $("#erroSpan").fadeIn(800);
+        setTimeout(function(){
+            $("#erroSpan").fadeOut(800); 
+        },7000);
+        
 	});
 }

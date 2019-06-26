@@ -108,17 +108,17 @@
         </button>
       </div>
       <div class="modal-body">
-        <form action="<?= base_url()?>atividade/salvar_solicitacao" method="post">
+        <form action="" id="solicitaAtividade" method="post">
                 <div class="form-row">
                   <input type="text" id="nomeSolicitante" name="nomeSolicitante" value="<?= $nome ?>" hidden>
                   <input type="text" id="emailSolicitante" name="emailSolicitante" value="<?= $email ?>" hidden>
                   <div class="form-group col-md-12">
                     <label for="inputAddress">Atividade</label>
-                    <input type="text" class="form-control" id="txtnome" name="txtnome" placeholder="Digite o nome da atividade">
+                    <input type="text" class="form-control" id="txtnome" name="txtnome" placeholder="Digite o nome da atividade" maxlength="150" required >
                   </div>
                   <div class="form-group col-md-12">
                     <label for="txtDescricao">Descrição</label>
-                    <textarea rows="5" class="form-control" id="txtDescricao" name="txtDescricao" placeholder="Escreva uma  breve descrição com a proposta e o tema."></textarea>  
+                    <textarea rows="5" class="form-control" id="txtDescricao" name="txtDescricao" placeholder="Escreva uma  breve descrição com a proposta e o tema." maxlength="400" required></textarea>  
                   </div>
                   
                 </div>
@@ -131,9 +131,13 @@
        
       </div>
       <div class="modal-footer">
+        
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
         <button type="submit" id="btnSolicitacao" class="btn btn-primary">Enviar</button>
+        
       </div>
+      <span class="help-block text-center" style="margin:10px;" id="erroSpan"  ></span>
+     
       </form>
     </div>
   </div>

@@ -52,7 +52,7 @@
                   <td><?=$atividade['usuario']?></td>
                   <td><?=$atividade['email']?></td>
                   <td><?= date("d/m/Y",strtotime($atividade['dt_recebe']) )?></td>
-                  <td><?=$atividade['descricao']?></td>
+                  <td class="text-wrap" style="max-width:300px;text-align:justify;"><?=$atividade['descricao']?></td>
                   <td><?=$atividade['status']?></td>
                   <td>
                     <a  class="btn-link text-dark" title="Alterar Status" data-toggle="modal" data-target="#ModalSolicitacoes"><i class="fas fa-edit"></i>&nbsp&nbsp</a>

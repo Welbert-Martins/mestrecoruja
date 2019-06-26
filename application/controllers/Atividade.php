@@ -24,13 +24,31 @@ class Atividade extends CI_Controller {
         $data["dt_recebe"] = date("Y-m-d");
         $data["status"] = "Aguardando";
 
+
+      
+
+        if(empty($data["tipo"])||empty($data["descricao"])){
+            $json["status"]=0;
+			$json["lista_erro"]["#btnSolicitacao"]= "Atividade e descrição não podem ser vazios!";
+        }
+        elseif( strlen($data["descricao"]) > 400){
+            $json["status"]=0;
+			$json["lista_erro"]["#btnSolicitacao"]= "Descrição deve ter no máximo 400 caracteres!";
+        }
+        else{
+            $this->atividade_model->inserirSolicitacao($data);
+            $json["lista_erro"]["#btnSolicitacao"]= "Atividade solicitada com sucesso!Em breve a enviaremos para o email cadastrado!";
+        }
+
       
         
-        $this->atividade_model->inserirSolicitacao($data);
+       
       
         
         
-        redirect('page_user');
+        
+
+        echo json_encode($json);
     }
     
     public function index()

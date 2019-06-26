@@ -10,6 +10,7 @@ $(function () {
 				$("#btnLogin").parent().siblings(".help-block").html(carregaImagem("Verificando..."));
 			},
 			success:function (json) {
+				
 				if (json["status"]==1) {
 					limparErros();
 					$("#btnLogin").parent().siblings('.help-block').html(carregaImagem("Logando..."));
